@@ -1,0 +1,9 @@
+<div>
+  <h1>Dynamic Div Elements</h1>
+  <app-div-individual
+    *ngFor="let item of items; let i = index"
+    [width]="200"
+    [height]="200"
+    [index]="i + 1"
+  ></app-div-individual>
+</div>

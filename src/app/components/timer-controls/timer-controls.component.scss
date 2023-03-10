@@ -1,0 +1,21 @@
+.timer-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timer-controls__limit {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.timer-controls__limit label {
+  margin-right: 10px;
+}
+
+.timer-controls__buttons button {
+  margin-right: 10px;
+}

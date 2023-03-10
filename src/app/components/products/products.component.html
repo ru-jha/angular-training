@@ -1,0 +1,21 @@
+<div class="filters m-3">
+  <label for="price-range">Price Range:</label>
+  <select name="price-range" [(ngModel)]="selectedPriceRange">
+    <option *ngFor="let option of priceRangeOptions" [value]="option">
+      {{ option }}
+    </option>
+  </select>
+</div>
+<div class="product-grid">
+  <ng-container *ngFor="let product of products">
+    <div class="product" *ngIf="passesFilter(product.price)">
+      <img
+        class="card-img-top"
+        src="{{ product.imageUrl }}"
+        alt="{{ product.name }}"
+      />
+      <h3 class="card-title">Name: {{ product.name }}</h3>
+      <p class="card-title">Price: {{ product.price }}</p>
+    </div>
+  </ng-container>
+</div>

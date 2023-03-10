@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let column of getKeys(students[0])" (click)="onSort(column)">
+        {{ column }}
+        <span *ngIf="column === sortColumn">
+          {{ sortDirection === 1 ? "^" : "~" }}
+        </span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{ student.name }}</td>
+      <td>{{ student.math }}</td>
+      <td>{{ student.science }}</td>
+      <td>{{ student.english }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="onReset()">Reset</button>

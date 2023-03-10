@@ -1,0 +1,13 @@
+<div>
+  <app-countdown-timer [remainingTime]="remainingTime"></app-countdown-timer>
+  <app-timer-controls
+    (remainingTimeChange)="onRemainingTimeChange($event)"
+    (startClick)="onStartClick()"
+    (pauseClick)="onPauseClick()"
+  ></app-timer-controls>
+  <app-timer-logs [timestamps]="timerLogs"></app-timer-logs>
+  <app-click-counter
+    [startCount]="startCount"
+    [pauseCount]="pauseCount"
+  ></app-click-counter>
+</div>
