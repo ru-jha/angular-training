@@ -1,5 +1,7 @@
 <div (scroll)="onWindowScroll()">
-  <h1>Dynamic Div Elements</h1>
+  <div class="sticky">
+    <h1>Dynamic Div Elements</h1>
+  </div>
   <app-div-individual
     *ngFor="let item of items; let i = index"
     [width]="200"
