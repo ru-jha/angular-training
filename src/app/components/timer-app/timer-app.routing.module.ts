@@ -3,11 +3,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-import { ClickCounterComponent } from '../click-counter/click-counter.component';
-import { CountdownTimerComponent } from '../countdown-timer/countdown-timer.component';
-import { TimerControlsComponent } from '../timer-controls/timer-controls.component';
-import { TimerLogsComponent } from '../timer-logs/timer-logs.component';
+import { ClickCounterComponent } from './click-counter/click-counter.component';
+import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { TimerAppComponent } from './timer-app.component';
+import { TimerControlsComponent } from './timer-controls/timer-controls.component';
+import { TimerLogsComponent } from './timer-controls/timer-logs/timer-logs.component';
 
 const routes: Routes = [
   { path: '', component: TimerAppComponent, pathMatch: 'full' },

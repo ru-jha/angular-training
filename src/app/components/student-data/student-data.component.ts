@@ -46,6 +46,6 @@ export class StudentMarksTableComponent implements OnInit {
   }
 
   getKeys(obj: {}) {
-    return Object.keys(obj);
+    return Object?.keys(obj);
   }
 }

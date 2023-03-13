@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { Product } from 'src/app/models/data.model';
 
 @Component({
@@ -214,7 +215,6 @@ export class ProductsComponent {
   priceRangeOptions: number[] = [20, 40, 60, 80, 100, 120, 140, 160];
   selectedPriceRange: number = 100;
   passesFilter(price: number): boolean {
-    console.log('abc');
     return price >= this.minPrice && price <= this.selectedPriceRange;
   }
 }
